@@ -24,6 +24,71 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
             margin: 0 auto;
         }
 
+        .c-1 {
+            color: #2d3950;
+        }
+        
+        .c-2 {
+            color: #999;
+        }
+
+        .caja-servicio {
+            width: 33.3333333%;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .caja-servicio img {
+            margin-bottom: 15px;            
+        }
+
+        .caja-servicio h5 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .pd-90 {
+            padding: 90px 0;
+        }
+
+        .fs-40 {
+            font-size: 40px;
+        }
+
+        .fila {
+           display: flex;
+           margin-bottom: 20px;   
+        }
+
+        .caja-galeria {
+            width: 33.3333333%;
+           padding: 0 10px;
+        }
+
+        .caja-galeria img {
+            width: 100%;
+            display: block;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 18px;
+            background-color: transparent;
+            border: 1px solid #999;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }       
+        
+        .textarea {
+            width: 100%;
+            padding: 18px;
+            background-color: transparent;
+            border: 1px solid #999;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        
+
     </style>
 
 </head>
@@ -59,41 +124,41 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
 
             <div class="contenedor" style="padding: 30px 0; text-align: center;">
 
-                <h3 style="font-size: 40px;color: #2d3950;">Simple and pure design</h3>
-            <p style="color: #999;">
+                <h3 class="c-1 fs-40">Simple and pure design</h3>
+            <p class="c-2">
                 Designers everywhere gush with admiration upon seeing a web design and exclaim "it's beautiful, it's so clean!". There are a countless number of webdesign round-ups dedicated to 'clean' design and it is a term thrown around quite a bit in the web design community. It can be easy to spot a good example of clean design.
             </p>
             </div>
 
     </section>
 
-    <section id="Servicios">
+    <section id="Servicios" class="pd-90">
 
-        <div class="contenedor">
+        <div class="contenedor" style="display: flex;">
 
             <div class="caja-servicio">
                 <img src="Imagenes/Strict-assets/icon-movil.jpg" alt="" >
-                <h5>Optimized for all devices</h5>
-                <span>
-                    Strict has been designed to be fully responsive on all devices.
+                <h5 class="c-1">Optimized for all devices</h5>
+                <span class="c-2">
+                    STRICT has been designed to be fully responsive on all devices.
                 </span>
                 
             </div>
             <div class="caja-servicio">
     
-                <img src="Imagenes/Strict-assets/icon-movil.jpg">
-                <h5>Optimized for all devices</h5>
-                <span>
-                    Strict has been designed to be fully responsive on all devices.
+                <img src="Imagenes/Strict-assets/icon-enviar.jpg">
+                <h5 class="c-1">Clean & Minimal design</h5>
+                <span class="c-2">
+                    This multipurpose theme is specially created to be used for diferent projects.
                 </span>
                 
             </div>
             <div class="caja-servicio">
     
-                <img src="Imagenes/Strict-assets/icon-movil.jpg">
-                <h5>Optimized for all devices</h5>
-                <span>
-                    Strict has been designed to be fully responsive on all devices.
+                <img src="Imagenes/Strict-assets/icon-voz.jpg">
+                <h5 class="c-1">Font Awesome icon</h5>
+                <span class="c-2">
+                    This multipurpose theme is specially created to be used for diferent projects.
                 </span>
                 
             </div>
@@ -101,64 +166,79 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
 
     </section>
 
-    <section id="Showcase">
+    <section id="Showcase" class="bg-1 pd-90">
 
-        <div class="encabezado">
-            <h2>Showcase your work like a pro</h2>
+       <div class="contenedor">
 
-            <span>Contact me if you like my work</span>
+        <div class="encabezado" style="text-align: center; margin-bottom: 50px;">
 
+            <h2 class="c-1 fs-40">Showcase your work like a pro</h2>
+            <span class="c-2">Contact me if you like my work</span>
+          
         </div>
 
         <div class="galeria">
 
-            <div class="caja-galeria">
-                <img src="Imagenes/Strict-assets/show-1.jpg" alt="">
+            <div class="row" style="display: flex;">
+                <div class="caja-galeria">
+                    <img src="Imagenes/Strict-assets/show-1.jpg" alt="">
+                </div>
+                <div class="caja-galeria">
+                    <img src="Imagenes/Strict-assets/show-2.jpg" alt="">
+                </div>
+                <div class="caja-galeria">
+                    <img src="Imagenes/Strict-assets/show-3.jpg" alt="">
+                </div>
             </div>
-            <div class="caja-galeria">
-                <img src="Imagenes/Strict-assets/show-2.jpg" alt="">
-            </div>
-            <div class="caja-galeria">
-                <img src="Imagenes/Strict-assets/show-3.jpg" alt="">
-            </div>
-            <div class="caja-galeria">
-                <img src="Imagenes/Strict-assets/show-4.jpg" alt="">
-            </div>
-            <div class="caja-galeria">
-                <img src="Imagenes/Strict-assets/show-5.jpg" alt="">
-            </div>
-            <div class="caja-galeria">
-                <img src="Imagenes/Strict-assets/show-6.jpg" alt="">
+
+            <div class="row" style="display: flex;">
+                <div class="caja-galeria">
+                    <img src="Imagenes/Strict-assets/show-4.jpg" alt="">
+                </div>
+                <div class="caja-galeria">
+                    <img src="Imagenes/Strict-assets/show-5.jpg" alt="">
+                </div>
+                <div class="caja-galeria">
+                    <img src="Imagenes/Strict-assets/show-6.jpg" alt="">
+                </div>
+
             </div>
 
         </div>
+        
+       </div>
 
     </section>
 
-    <section id="Stay" style="background: url(Imagenes/Strict-assets/bg-stay.jpg);"
+    <section class="pd-90" id="Stay" style="background: url(Imagenes/Strict-assets/bg-stay.jpg);">
 
-       <div class="encabezado">
-        <h2>Stay with us</h2>
-        <span>We ensure quality and support</span>
-       </div>
+        <div class="contenedor">
 
-       <form action="" id="contacto">
+            <div class="encabezado" style="text-align: center;margin-bottom: 30px;">
+                <h2 class="fs-40" style="color: white;">Stay with us</h2>
+                <span style="color: #999;">We ensure quality and support</span>
+               </div>
+        
+               <form action="" id="contacto">
+        
+                <input class="form-input" type="text" placeholder="Full name">
+                <input class="form-input" type="email" placeholder="Email Address">
+                <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Message">
+                </textarea>
+        
+                <div>
+                    <div class="check">
+                        <input id="subs" type="checkbox">
+                        <label for="subs">Suscribe Newsletter</label>
+                    </div>
+                    <div class="btn">
+                        <button type="button">Send</button>
+                    </div>
+                </div>
+        
+               </form>
 
-        <input type="text" placeholder="Full name">
-        <input type="email" placeholder="Email Address">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-
-        <div>
-            <div class="check">
-                <input id="subs" type="checkbox">
-                <label for="subs">Suscribe Newsletter</label>
-            </div>
-            <div class="btn">
-                <button type="button">Send</button>
-            </div>
         </div>
-
-       </form>
 
     </section>
 
