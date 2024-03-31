@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strict</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 
-h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
+h1, h2, h3, h4, h5, h6, p, strong, a, span, button label {
 
             font-family: sans-serif;
         }
@@ -55,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
             font-size: 40px;
         }
 
-        .fila {
+        .row {
            display: flex;
            margin-bottom: 20px;   
         }
@@ -70,6 +71,7 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
             display: block;
         }
 
+        
         .form-input {
             width: 100%;
             padding: 18px;
@@ -77,18 +79,17 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
             border: 1px solid #999;
             margin-bottom: 15px;
             border-radius: 4px;
-        }       
-        
-        .textarea {
-            width: 100%;
-            padding: 18px;
-            background-color: transparent;
-            border: 1px solid #999;
-            margin-bottom: 15px;
-            border-radius: 4px;
+            color: #999;
         }
-        
 
+        .btn button {
+            background-color: transparent;
+            border: 1px solid #15a4fa;
+            padding: 16px 45px;
+            border-radius: 5px;
+            color: white; font-size: 20px;
+        }
+                        
     </style>
 
 </head>
@@ -115,7 +116,9 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
                 Strict is a responsive theme with a clean and minimal look.
             </p>
 
-            <button style="background-color: transparent; border: 1px solid #15a4fa;padding: 18px 35px; border-radius: 5px; color: white; font-size: 20px;">Call to action</button>
+            <div class="btn">
+                <button>Call to action</button>
+            </div>
 
         </div>
     </header>
@@ -219,19 +222,19 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
                 <span style="color: #999;">We ensure quality and support</span>
                </div>
         
-               <form action="" id="contacto">
+               <form action="" id="contacto" style="max-width: 600px;margin: 0 auto;">
         
                 <input class="form-input" type="text" placeholder="Full name">
                 <input class="form-input" type="email" placeholder="Email Address">
-                <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Message">
+                <textarea class="form-input" name="" id="" cols="30" rows="10" placeholder="Message">
                 </textarea>
         
-                <div>
-                    <div class="check">
+                <div style="display: flex;">
+                    <div class="check" style="width: 70%;">
                         <input id="subs" type="checkbox">
-                        <label for="subs">Suscribe Newsletter</label>
+                        <label for="subs" style="color: white;">Suscribe Newsletter</label>
                     </div>
-                    <div class="btn">
+                    <div class="btn" style="width: 30%;">
                         <button type="button">Send</button>
                     </div>
                 </div>
@@ -242,9 +245,11 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
 
     </section>
 
-    <footer>
-        <span>Copyright 2024 STRICT</span>
-        <div class="redes-sociales">
+    <footer class="bg-1" style="padding: 30px 0;">
+        <div class="contenedor" style="display: flex;align-items: center;">
+
+            <span style="width: 60%;">Copyright 2024 STRICT</span>
+        <div class="redes-sociales" style="width: 40%;text-align: right;">
             <a href="#" target="_blank">
                 <img src="Imagenes/Strict-assets/icon-facebook.jpg" alt="" style="height: 50px;">
             </a>
@@ -256,8 +261,9 @@ h1, h2, h3, h4, h5, h6, p, strong, a, span, button {
             </a>
             <a href="#" target="_blank">
                 <img src="Imagenes/Strict-assets/icon-twitter.jpg" alt="" style="height: 50px;">
-            </a>
-                                    
+            </a>           
+        </div>
+
         </div>
     </footer>
 
